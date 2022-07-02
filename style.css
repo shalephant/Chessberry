@@ -1,0 +1,213 @@
+@import url('https://fonts.google.com/specimen/Nunito?query=nunito');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Open+Sans:wght@400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+header {
+    width: 923px;
+    height: 70.875px;
+    background-color:#7025FB;
+    display: flex;   
+}
+
+
+#logo {
+    position: absolute;
+    left: 60px;
+    margin-top: 25.3125px;  
+}
+#logo-text {
+    
+    position: absolute;
+    top: 25.3125px;
+    left: 82.93px;
+    top: 25.3125px;
+}
+
+.left-part {
+    width: 923px;
+    height: 109.125px;
+ 
+}
+
+.right-part-p1 {
+    width: 997px;
+    height: 1080px;
+    background-color: #FD5334;
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;   
+}
+
+.main-text {
+    font-family: 'Nunito';
+    font-weight: 800;
+    
+    
+    color: white;
+    text-transform:uppercase;
+    line-height: 109.12px;
+    
+}
+
+.main-text > .first-sen {
+    position: fixed;
+    font-size: 80px; 
+   top: 223.6px;
+   left: 1008px;
+   line-height: 92px;
+   
+
+}
+.main-text > .second-sen {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    position: fixed;
+    top: 258px;
+    left: 1530px;
+    line-height: 27.28px;
+}
+
+.main-text > .third-sen {
+    position: fixed;
+    font-size: 80px;
+    left: 1008px;
+    top: 329px;
+    line-height: 92px;
+}
+
+.get-started {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16.875px;
+    color: #FFFFFF;
+    background-color: #212529;
+    position: fixed;
+    display: flex;
+    
+    align-items: flex-start;
+    height: 53px;
+    width: 191px;
+    
+    left: 1008px;
+    top: 507px;
+    border-color:#212529;
+    padding: 13px 24px 13px 24px;
+    border-radius: 8px;
+    
+    
+    text-transform: capitalize;
+    gap: 10px;  
+    cursor: pointer; 
+}
+
+.next {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16.875px;
+    color: #FFFFFF;
+    background-color: #212529;
+    position: absolute;
+    display: flex;
+
+    height: 53px;
+    width: 128px;
+    
+    left: 1618px;
+    top: 736.6px;
+    border-color:#212529;
+    padding: 13px 24px 13px 24px;
+    border-radius: 8px;
+    
+    
+    text-transform: capitalize;
+    gap: 10px;  
+    cursor: pointer; 
+}
+
+.back {
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 16.875px;
+    color: #212529;
+    position: fixed;
+    display: flex;
+    
+    
+    height: 53px;
+    width: 191px;
+    
+    left: 995px;
+    top: 736.6px;
+    border-color:#212529;
+    padding: 13px 24px 13px 24px;
+    border-radius: 8px;
+    
+    
+    text-transform: capitalize;
+    gap: 10px;  
+    cursor: pointer; 
+}
+.get-started:hover {
+    
+    border-color:#7025FB;
+}
+
+.next:hover {
+    
+    border-color:#7025FB;
+}
+
+
+#picture-two {
+    position: fixed;
+}
+
+.right-part-p2 {
+    font-family: 'Open sans';
+   
+    
+}
+.wassup {
+    width: 997px;
+    height: 70.875px;
+    position: absolute;
+    left: 971px;
+    text-transform: capitalize;
+    
+    top: 25.3125px;
+    
+}
+.border {
+    
+    position: absolute;
+    width: 999px;
+    height: 0px;
+    left: 923px;
+    top: 70.875px;
+    border: 1px solid rgba(185, 180, 196, 0.3);
+}
+
+.personal-inform {
+    position: absolute;
+    top: 273.375px;
+    left: 971px;
+}
+
+.input-info {
+    display: flex;
+    position: absolute;
+    left: 971px;
+    top: 478.4px;
+}
+
