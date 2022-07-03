@@ -222,8 +222,7 @@ header {
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: center;    
-    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);       
+    justify-content: center;        
     width: 775px; 
 }
 
@@ -234,9 +233,24 @@ header {
 input {
     width: 100%;
     padding: 8px 16px;
-    margin: 5px 0;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125); 
+    margin: 4px;
     border: 0;  
 }
+input:hover {
+    background-color: #F8F9FA;
+    cursor: pointer;
+    border: 0;
+}
+
+input:active {
+    background-color: #E9ECEF;
+    
+    box-shadow: inset 0px 0px 0px #E9ECEF;
+   
+}
+
+
 ::placeholder {
     font-family: 'Open sans';
     font-weight: 400;
