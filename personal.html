@@ -48,31 +48,43 @@
                 <div class="info">
                     <input type="text" name="name" id="name" placeholder="Name" minlength="2" required/>
                     <i><img id="checkmark" src="pwichka.png" /></i>
-                    <i><img id="exclamationmark" src="dzaxili.png" /></i>
-                    <small>Invalid name</small>
-                    <p>Please enter valid name</p>
+                    <div class="error-box">
+                        <i><img id="exclamationmark" src="dzaxili.png" /></i>
+                        <small>Invalid name</small>
+                        <img id="close-window" src="x.png"/>
+                        <p>Please enter valid name</p>
+                    </div>
                 </div>
                 <div class="info email">
                     <input type="email" name="email" id="email" placeholder="Email address" pattern=".+@redberry\.ge" required />
                     <i><img id="checkmark" src="pwichka.png" /></i>
-                    <i><img id="exclamationmark" src="dzaxili.png" /></i>
-                    <small>Invalid email</small>
-                    <p>Please enter valid email address</p>
+                    <div class="error-box">
+                        <i><img id="exclamationmark" src="dzaxili.png" /></i>
+                        <small>Invalid email</small>
+                        <img id="close-window" src="x.png"/>
+                        <p>Please enter valid email address</p>
+                    </div>
                 </div>
                 <div class="info number">
                     <input type="number" name="phone" id="phone" placeholder="Phone number" min="9" max="9" required />
                     <i class="fas fa-check-circle"></i>
                     <i><img id="checkmark" src="pwichka.png" /></i>
-                    <i><img id="exclamationmark" src="dzaxili.png" /></i>
-                    <small>Invalid number</small>
-                    <p>Please enter valid phone number</p>
+                    <div class="error-box">
+                        <i><img id="exclamationmark" src="dzaxili.png" /></i>
+                        <small>Invalid number</small>
+                        <img id="close-window" src="x.png"/>
+                        <p>Please enter valid phone number</p>
+                    </div>
                 </div>
                 <div class="info date">
                     <input type="date" name="date_of_birth" id="date_of_birth" placeholder="Date of birth" required />
                     <i><img id="checkmark" src="pwichka.png" /></i>
-                    <i><img id="exclamationmark" src="dzaxili.png" /></i>
-                    <small>Invalid email</small>
-                    <p>Please enter valid date</p>
+                    <div class="error-box">
+                        <i><img id="exclamationmark" src="dzaxili.png" /></i>
+                        <small class="invalid">Invalid email</small>
+                        <img id="close-window" src="x.png"/>
+                        <p class="error-message">Please enter valid date</p>
+                    </div>
                 </div>
             </form>    
         </section>
