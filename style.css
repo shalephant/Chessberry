@@ -245,9 +245,7 @@ input:hover {
 
 input:active {
     background-color: #E9ECEF;
-    
-    box-shadow: inset 0px 0px 0px #E9ECEF;
-   
+    box-shadow: inset 0px 0px 0px #E9ECEF;  
 }
 
 
@@ -258,4 +256,56 @@ input:active {
     line-height: 30px;
     color: #212529;
     
+}
+
+.steps {
+    display: flex;
+    position: absolute;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 197px;
+    left: 1044px;
+    top: 152px;
+    
+}
+
+.steps > p {
+    
+    font-family: 'Open Sans';
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.step1, .step2 {
+    box-sizing: border-box;
+    border: 1px solid #E5E6E8;
+    padding:  8px 14px 7px 15px;
+    margin-left: -14px;
+    margin-top: -8px;
+    border-radius: 8px;
+}    
+
+.step2 {
+    background-color: #F5F5F5;;
+}
+.steps-line {
+    
+    position: absolute;
+    width: 174px;
+    left: 1074px;
+    top: 164px;
+    border: 1px solid rgba(185, 180, 196, 0.3);
+}
+
+
+.steps-text {
+    display: flex;
+    position: absolute;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 77px;
+    left: 971px;
+    top: 188px;
 }
