@@ -121,11 +121,11 @@ header {
     display: flex;
     
     left: 1618px;
-    top: 736.6px;
+    top: 873px;
     border-color:#212529;
-    padding: 13px 24px 13px 24px;
+    padding: 13px 24px;
     border-radius: 8px;
-    
+    border: 0;
     text-transform: capitalize;
     gap: 10px;  
     cursor: pointer; 
@@ -143,8 +143,9 @@ header {
     display: flex;
     position: absolute;
     border: 1px solid black;
-    left: 995px;
-    top: 736.6px;
+    left: 971px;
+    
+    top: 873px;
     border-color:#212529;
     padding: 13px 24px;
     border-radius: 8px; 
@@ -221,10 +222,8 @@ header {
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
-    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);   
-    
+    justify-content: center;    
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);       
     width: 775px; 
 }
 
@@ -234,7 +233,6 @@ header {
 
 input {
     width: 100%;
-    
     padding: 8px 16px;
     margin: 5px 0;
     border: 0;  
@@ -242,8 +240,8 @@ input {
 ::placeholder {
     font-family: 'Open sans';
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 30px;
     color: #212529;
     
 }
