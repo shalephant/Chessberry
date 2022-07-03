@@ -289,6 +289,7 @@ input:active {
 
 .step2 {
     background-color: #F5F5F5;;
+    color: #95939A;
 }
 .steps-line {
     
@@ -308,4 +309,31 @@ input:active {
     gap: 77px;
     left: 971px;
     top: 188px;
+}
+
+.quote, .author {
+    display: flex;
+    position: absolute;
+    left: 132px;
+    text-transform:uppercase;
+    font-style:italic;
+}
+.quote {
+    top: 335px;
+    width: 423px;
+    height: 83px;
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 35px;
+}
+.author {
+    
+    top: 442px;
+    color: #E5E6E8;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
 }
