@@ -237,18 +237,29 @@ input {
     margin: 4px;
     border: 0;  
 }
-input:hover {
+.info input:hover {
     background-color: #F8F9FA;
     cursor: pointer;
     border: 0;
 }
 
-input:active {
+.info input:active {
     background-color: #E9ECEF;
     box-shadow: inset 0px 0px 0px #E9ECEF;  
 }
 
+.info.success i.checkmark {
+    visibility: visible;
+}
 
+.info.errpr div.error-box {
+    visibility: visible;
+}
+
+.error input {
+    background-color: #FFEFEF;;
+    color: #DC3545;
+}
 ::placeholder {
     font-family: 'Open sans';
     font-weight: 400;
@@ -258,13 +269,14 @@ input:active {
     
 }
 
-#checkmark {
-    
+.checkmark {
+    visibility: hidden;
     right: 13px;
     top: 13px;
 }
 
 .error-box {
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     width: 350px;
@@ -301,6 +313,8 @@ input:active {
     left: 326.47px;
     top: 14.47px;
 }
+
+
 .error-message {
     position: absolute;
     left: 12px;
