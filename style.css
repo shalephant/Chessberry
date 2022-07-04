@@ -24,15 +24,15 @@ header {
 #logo {
     position: absolute;
     left: 60px;
-    margin-top: 25.3125px;  
+    top: 30.41px;  
 }
 
 #logo-text {
     
     position: absolute;
-    top: 25.3125px;
+    top: 30px;
     left: 82.93px;
-    top: 25.3125px;
+    
 }
 
 .picture {
