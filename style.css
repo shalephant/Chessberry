@@ -6,12 +6,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
 }
 
 header {
     width: 923px;
-    height: 70.875px;
+    height: 84px;
     background-color:#7025FB;
     display: flex;   
 }
@@ -22,6 +26,7 @@ header {
     left: 60px;
     margin-top: 25.3125px;  
 }
+
 #logo-text {
     
     position: absolute;
@@ -30,10 +35,12 @@ header {
     top: 25.3125px;
 }
 
-.left-part {
-    width: 923px;
-    height: 109.125px;
- 
+.picture {
+        position: absolute;
+        width: 923px;
+        height: 996px;
+        top: 84px;
+        left: 0;
 }
 
 .right-part-p1 {
@@ -41,9 +48,9 @@ header {
     height: 1080px;
     background-color: #FD5334;
     display: flex;
-    position: fixed;
-    right: 0;
-    top: 0;   
+    position: absolute;
+    left: 923px;
+    top: 0;
 }
 
 .main-text {
@@ -115,7 +122,7 @@ header {
     font-size: 20px;
     color: #FFFFFF;
     background-color: #212529;
-    position: absolute;
+    position: fixed;
     display: flex;
     
     left: 1618px;
@@ -177,9 +184,7 @@ header {
     border: 1px solid rgba(194, 165, 249, 0.8);
 }
 
-#picture-two {
-    position: fixed;
-}
+
 
 .right-part-p2 {
     font-family: 'Open sans';    
@@ -217,7 +222,7 @@ header {
     top: 478.4px;
 }
 
-.info {
+.input-control {
     display: flex;
     flex-direction:row;
     justify-content: center;        
@@ -235,27 +240,21 @@ input {
     margin: 4px;
     border: 0;  
 }
-.info input:hover {
+.input-control input:hover {
     background-color: #F8F9FA;
     cursor: pointer;
     border: 0;
 }
 
-.info input:active {
+.input-control input:active {
     background-color: #E9ECEF;
     box-shadow: inset 0px 0px 0px #E9ECEF;  
 }
 
-.info.success i.checkmark {
-    visibility: visible;
-}
 
-.info.error div.error-box {
-    visibility: visible;
-}
 
-.error input {
-    background-color: #FFEFEF;;
+.input-control .error {
+    
     color: #DC3545;
 }
 ::placeholder {
@@ -268,7 +267,7 @@ input {
 }
 
 .checkmark {
-    visibility: hidden;
+    
     right: 13px;
     top: 13px;
 }

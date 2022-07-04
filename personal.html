@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redberry Knight Cup</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="./index.js"></script>
 </head>
 <body>
     <section>
@@ -14,7 +15,7 @@
         </header>
     </section>
     <section class="left-part">
-        <img id="picture-two" src="2image.png" />
+        <img class="picture" id="picture-two" src="2image.png" />
         
         <h1 class="quote">"when you see a good move, look for a better one."</h1>
         <h1 class="author">-Emanuel Lasker</h1>
@@ -45,7 +46,7 @@
        
         <section class="input-info">
             <form class="form" id="form">
-                <div class="info">
+                <div class="input-control">
                     <input type="text" name="username" id="username" placeholder="Name" minlength="2" required/>
                     <i class="checkmark"> <img id="checkmark" src="pwichka.png" /></i>
                     <div class="error-box">
@@ -55,7 +56,7 @@
                         <p class="error-message">Please enter valid name</p>
                     </div>
                 </div>
-                <div class="info email">
+                <div class="input-control email">
                     <input type="email" name="email" id="email" placeholder="Email address" pattern=".+@redberry\.ge" required />
                     <i class="checkmark"><img id="checkmark" src="pwichka.png" /></i>
                     <div class="error-box">
@@ -65,7 +66,7 @@
                         <p class="error-message">Please enter valid email address</p>
                     </div>
                 </div>
-                <div class="info number">
+                <div class="input-control number">
                     <input type="number" name="phone" id="phone" placeholder="Phone number" min="9" max="9" required />
                     
                     <i class="checkmark"><img id="checkmark" src="pwichka.png" /></i>
@@ -76,7 +77,7 @@
                         <p class="error-message">Please enter valid phone number</p>
                     </div>
                 </div>
-                <div class="info date">
+                <div class="input-control date">
                     <input type="date" name="date_of_birth" id="date_of_birth" placeholder="Date of birth" required />
                     <i class="checkmark"><img id="checkmark" src="pwichka.png" /></i>
                     <div class="error-box">
@@ -86,11 +87,12 @@
                         <p class="error-message">Please enter valid date</p>
                     </div>
                 </div>
+                <button type="submit" class="next">next<img id="vector" src="Vector.png" />
             </form>    
         </section>
         <div class="buttons">
             <a href="chessberry.html"><button class="back">back</button></a>
-            <button class="next">next<img id="vector" src="Vector.png" />
+            
         </button> 
         </div>
     </main>
