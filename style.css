@@ -1,5 +1,5 @@
 @import url('https://fonts.google.com/specimen/Nunito?query=nunito');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Nunito:wght@900&family=Nunito:wght@700&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Nunito:wght@500&&family=Nunito:wght@900&family=Nunito:wght@700&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Open+Sans:wght@400&display=swap');
 
 * {
@@ -8,10 +8,7 @@
     box-sizing: border-box;
 }
 
-body {
-    min-height: 100vh;
-    width: 100%;
-}
+
 
 header {
     width: 923px;
@@ -87,7 +84,6 @@ header {
 }
 
 /* Get Started button */
-
 .get-started {
     font-family: 'Open sans';
     font-weight: 400;
@@ -107,6 +103,7 @@ header {
     height: 53px;
     gap: 10px;  
     cursor: pointer; 
+    border: 0;
 }
 
 /* next button */
@@ -117,12 +114,13 @@ header {
     font-size: 20px;
     color: #FFFFFF;
     background-color: #212529;
-    position: fixed;
     display: flex;
-    
+    position: fixed;
+    align-items: flex-start;
+    width: 128px;
     left: 1618px;
     top: 873px;
-    border-color:#212529;
+    border-color: #212529;
     padding: 13px 24px;
     border-radius: 8px;
     border: 0;
@@ -182,16 +180,20 @@ header {
 
 
 .right-part-p2 {
+
     font-family: 'Open sans';    
 }
 
 .wassup {
-    width: 997px;
-    height: 70.875px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
     position: absolute;
     left: 971px;
     text-transform: capitalize;
-    top: 25.3125px;
+    top: 30px;
     
 }
 
@@ -199,29 +201,50 @@ header {
     position: absolute;
     width: 999px;
     height: 0px;
-    left: 923px;
-    top: 70.875px;
+    right: 0;
+    top: 84px;
     border: 1px solid rgba(185, 180, 196, 0.3);
 }
 
 .personal-inform {
     position: absolute;
-    top: 273.375px;
+    top: 324px;
     left: 971px;
 }
 
-.input-info {
-    display: flex;
+.personal-inform > h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    
+}
+.personal-inform > p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #95939A;
+    text-transform: capitalize;
+}
+
+#form {
     position: absolute;
+    top: 481px;
     left: 971px;
-    top: 478.4px;
 }
 
 .input-control {
     display: flex;
     flex-direction:row;
-    justify-content: center;        
+    justify-content: center; 
+           
     width: 775px; 
+    
+    height: 46px;
+    
 }
 
 .email, .number, .date {
@@ -268,7 +291,6 @@ input {
 }
 
 .error-box {
-    visibility: hidden;
     display: flex;
     flex-direction: column;
     width: 350px;
@@ -300,6 +322,7 @@ input {
     line-height: 21px;
     color: #DC3545;
 }
+
 #close-window {
     position: absolute;
     left: 326.47px;
@@ -375,23 +398,21 @@ input {
     position: absolute;
     left: 132px;
     text-transform:uppercase;
+    font-family: 'Nunito';
     font-style:italic;
+    
 }
 .quote {
-    top: 335px;
+    top: 295px;
     width: 423px;
     height: 83px;
-    font-family: 'Nunito';
     font-weight: 800;
     font-size: 26px;
     line-height: 35px;
 }
 .author {
-    
-    top: 442px;
+    top: 402px;
     color: #E5E6E8;
-    font-family: 'Open Sans';
-    font-style: italic;
     font-weight: 500;
     font-size: 24px;
     line-height: 33px;
