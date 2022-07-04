@@ -15,6 +15,8 @@ header {
     height: 84px;
     background-color:#7025FB;
     display: flex;   
+    position: absolute;
+    z-index: 1;
 }
 
 
@@ -31,11 +33,19 @@ header {
 }
 
 .picture {
-        position: absolute;
+        
         width: 923px;
         height: 996px;
         top: 84px;
         left: 0;
+}
+#picture-three {
+    position: absolute;
+        width: 923px;
+        height: 1046px;
+        top: 34px;
+        left: 0;
+        z-index: 0;
 }
 
 .right-part-p1 {
@@ -410,7 +420,7 @@ input {
     font-size: 26px;
     line-height: 35px;
 }
-.author {
+.author{
     top: 402px;
     color: #E5E6E8;
     font-weight: 500;
@@ -418,3 +428,28 @@ input {
     line-height: 33px;
 }
 
+.quotee, .authorr {
+    display: flex;
+    position: absolute;
+    
+    text-transform:uppercase;
+    font-family: 'Nunito';
+    font-style:italic;
+}
+.quotee {
+    top: 261px;
+    left: 117px;
+    width: 615px;
+    height: 83px;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 35px;
+}
+.authorr {
+    top: 375px;
+    left: 466px;
+    color: #093F68;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+}
