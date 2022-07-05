@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redberry Knight Cup</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="./index.js"></script>
+    <script defer src="index.js"></script>
 </head>
 <body>
     <section>
@@ -46,8 +46,22 @@
        
         <section class="input-info">
             <form class="form" id="form">
-                <div class="input-control">
-                    
+                <div class="choose-control">
+                <select id="dropdown" required>
+                    <option value="none">level of knowledge</option>
+                    <option value="beg">Beginner</option>
+                    <option value="int">Intermediate</option>
+                    <option value="pro">Professional</option>
+                </select>
+                <select id="dropdown" required>
+                    <option value="none">Choose your character</option>
+                    <option value="beg">Beginner</option>
+                    <option value="int">Intermediate</option>
+                    <option value="pro">Professional</option>
+                </select>
+                <p>Have you participated in the Redberry Championship?</p>
+                <label><input type="radio" class="radion-answer" value="yes">Yes</label>
+                <label><input type="radio" class="radion-answer" value="no">No</label>
                 <button type="submit" class="next">next<img id="vector" src="Vector.png" />
             </form>    
         </section>

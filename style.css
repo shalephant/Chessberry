@@ -15,7 +15,7 @@ header {
     height: 84px;
     background-color:#7025FB;
     display: flex;   
-    position: absolute;
+    position: fixed;
     z-index: 1;
 }
 
@@ -33,19 +33,26 @@ header {
 }
 
 .picture {
-        
+        position: fixed;
         width: 923px;
         height: 996px;
         top: 84px;
         left: 0;
 }
 #picture-three {
-    position: absolute;
+     position: fixed;
         width: 923px;
         height: 1046px;
         top: 34px;
         left: 0;
         z-index: 0;
+}
+.picture-four {
+    position: fixed;   
+    width: 923px;
+    height: 996px;
+    top: 84px;
+    left: 0;
 }
 
 .right-part-p1 {
@@ -257,17 +264,19 @@ header {
     
 }
 
-.email, .number, .date {
-    margin-top: 39px;
-}
-
-input {
+.input-control > input {
     width: 100%;
     padding: 8px 16px;
     box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125); 
     margin: 4px;
     border: 0;  
 }
+
+.email, .number, .date {
+    margin-top: 39px;
+}
+
+
 .input-control input:hover {
     background-color: #F8F9FA;
     cursor: pointer;
@@ -452,4 +461,22 @@ input {
     font-weight: 500;
     font-size: 24px;
     line-height: 33px;
+}
+
+.finish {
+    position: absolute;
+    left: 1201px;
+    top: 622.65px;
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 150%;
+}
+
+#rocket {
+    position: absolute;
+    left: 1312.43px;
+    top: 422.9px;
+
 }

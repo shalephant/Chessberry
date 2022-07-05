@@ -35,3 +35,7 @@ function setErrorFor(input) {
     inputControl.classList.add('error');
     inputControl.classList.remove('success');
 }
+
+fetch ('https://chess-tournament-api.devtest.ge/api/grandmasters')
+    .then(res => res.json())
+    .then(data => console.log(data))
