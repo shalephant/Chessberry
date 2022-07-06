@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redberry Knight Cup</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="index.js"></script>
 </head>
 <body>
     <section>
@@ -55,25 +54,39 @@
                 </select>
                 <select id="dropdown" required>
                     <option value="none">Choose your character</option>
-                    <option value="beg">Beginner</option>
-                    <option value="int">Intermediate</option>
-                    <option value="pro">Professional</option>
+                    <option value="beg" id="1">Nona Gaphrindashvili</option>
+                    <option value="int" id="2"></option>
+                    <option value="pro" id="3"></option>
+                    <option value="pro" id="4"></option>
                 </select>
                 <p>Have you participated in the Redberry Championship?</p>
-                <label><input type="radio" class="radion-answer" value="yes">Yes</label>
-                <label><input type="radio" class="radion-answer" value="no">No</label>
+                <label><input type="radio" class="radion-answer" name="past" value="yes" checked>Yes</label>
+                <label><input type="radio" class="radion-answer" name="past" value="no">No</label>
                 <button type="submit" class="next">next<img id="vector" src="Vector.png" />
             </form>    
         </section>
         <div class="buttons">
-            <a href="chessberry.html"><button class="back">back</button></a>
+            <a href="personal.html"><button class="back">back</button></a>
             
         </button> 
         </div>
     </main>
 
+    <script> 
+        const MASTERS = 'https://chess-tournament-api.devtest.ge/api/grandmasters';
+            fetch(MASTERS)
+            .then(response => response.json())
+            .then(responseJson => {
+                
+                for(let { name } of responseJson) {
+                    console.log(name);
+                }
+            })
+        
 
 
-    <script src="index.js"> </script>
+        </script>
+
+    
 </body>
 </html>
