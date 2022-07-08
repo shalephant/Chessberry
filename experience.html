@@ -52,12 +52,12 @@
                     <option value="int">Intermediate</option>
                     <option value="pro">Professional</option>
                 </select>
-                <select id="dropdown" required>
+                <select id="grandmasters" required>
                     <option value="none">Choose your character</option>
-                    <option value="beg" id="1">Nona Gaphrindashvili</option>
-                    <option value="int" id="2"></option>
-                    <option value="pro" id="3"></option>
-                    <option value="pro" id="4"></option>
+                    <option class="character" value="beg" id="1">Nona Gaphrindashvili<img src="https://chess-tournament-api.devtest.ge/images/mikhail.jpg" alt="img"></option>
+                    <option class="character" value="int" id="2"><img src="" alt="img"></option>
+                    <option class="character" value="pro" id="3"><img src="" alt="img"></option>
+                    <option class="character" value="pro" id="4"><img src="" alt="img"></option>
                 </select>
                 <p>Have you participated in the Redberry Championship?</p>
                 <label><input type="radio" class="radion-answer" name="past" value="yes" checked>Yes</label>
@@ -72,16 +72,7 @@
         </div>
     </main>
 
-    <script> 
-        const MASTERS = 'https://chess-tournament-api.devtest.ge/api/grandmasters';
-            fetch(MASTERS)
-            .then(response => response.json())
-            .then(responseJson => {
-                
-                for(let { name } of responseJson) {
-                    console.log(name);
-                }
-            })
+    <script src="index.js"> 
         
 
 
