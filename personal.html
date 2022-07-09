@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redberry Knight Cup</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
 </head>
 <body>
     <section>
@@ -45,12 +44,18 @@
         </div>
        
         <section class="input-info">
-            <form class="form" id="form" action="https://chess-tournament-api.devtest.ge/api/register">
+            <div id="error_message">
+                <i><img id="exclamationmark" src="dzaxili.png" /></i>
+                <small class="invalid">Invalid number</small>
+                <img id="close-window" src="x.png"/>
+                <p class="error-message">Please enter valid phone number</p>
+            </div>
+            <form class="form" id="form" >
                 <div class="input-control">
-                    <input required type="text" name="name" id="name" placeholder="Name" minlength="2" />
+                    <input  type="text" name="name" id="name" placeholder="Name"/>
                     <i class="checkmark"> <img id="checkmark" src="pwichka.png" /></i>
-                    <span id="name-error">
-                        <div class="error-box">
+                    
+                        <div class="error-box" id="name-error">
                         
                             <i><img id="exclamationmark" src="dzaxili.png" /></i>
                             <small class="invalid">Invalid name</small>
@@ -58,52 +63,53 @@
                             <p class="error-message">Please enter valid name</p>
                         
                         </div>
-                    </span>
+                    
                 </div>
                 <div class="input-control email">
-                    <input required type="email" name="email" id="email" placeholder="Email address" pattern=".+@redberry\.ge"  />
+                    <input  type="email" name="email" id="email" placeholder="Email address"/>
                     <i class="checkmark"><img id="checkmark" src="pwichka.png" /></i>
-                    <span id="email-error">
+                    
 
-                    <div class="error-box">
+                    <div class="error-box" id="email-error">
                         <i><img id="exclamationmark" src="dzaxili.png" /></i>
                         <small class="invalid">Invalid email</small>
                         <img id="close-window" src="x.png"/>
                         <p class="error-message">Please enter valid email address</p>
                     </div>
 
-                    </span>
+                    
                 </div>
                 <div class="input-control number">
-                    <input required type="number" name="phone" id="phone" placeholder="Phone number" min.length="9" max="9"  />
+                    <input  type="text" name="number" id="number" placeholder="Phone number" />
                     <i class="checkmark"><img id="checkmark" src="pwichka.png" /></i>
 
-                    <span id="number-error">
+                    
 
-                    <div class="error-box">
+                    <div class="error-box" id="number-error">
                         <i><img id="exclamationmark" src="dzaxili.png" /></i>
                         <small class="invalid">Invalid number</small>
                         <img id="close-window" src="x.png"/>
                         <p class="error-message">Please enter valid phone number</p>
                     </div>
 
-                    </span>
+                    
                 </div>
                 <div class="input-control date">
-                    <input required type="date" name="date_of_birth" id="date_of_birth" placeholder="Date of birth"  />
+                    <input  type="date" name="date_of_birth" id="date_of_birth" placeholder="Date of birth"  />
                     <i class="checkmark"><img id="checkmark" src="pwichka.png" /></i>
 
-                    <span id="date-error">
-                        <div class="error-box" id="error-box">
+                    
+                        <div class="error-box" id="date-error">
                             <i><img id="exclamationmark" src="dzaxili.png" /></i>
                             <small class="invalid">Invalid email</small>
                             <img id="close-window" src="x.png"/>
                             <p class="error-message">Please enter valid date</p>
                         </div>
-                     </span>
                 </div>
-                <a href="experience.html"><button type="submit" class="submit">next<img id="vector" src="Vector.png" /></button> </a>
+                
             </form> 
+            <a href="experience.html"> <button type="submit" class="submit">xext<img id="vector" src="Vector.png" /></button> </a>
+
             <a href="chessberry.html"><button class="back">back</button></a>   
         </section>
         
@@ -113,6 +119,7 @@
         
     </main>
 
+    <script src="index.js"></script>
 
 
     

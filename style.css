@@ -293,26 +293,9 @@ header {
     box-shadow: inset 0px 0px 0px #E9ECEF;  
 }
 
-.input-control .checkmark {
-    right: 13px;
-    top: 13px;
-}
 
-.input-control .error {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: 87px;
-    padding: 0px;
-    background: rgba(255, 255, 255, 0.85);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    position: fixed;
-    top: 226px;
-    left: 1531px;
-    
-}
+
+
 
 ::placeholder {
     font-family: 'Open sans';
@@ -328,10 +311,9 @@ header {
     right: 13px;
     top: 13px;
 }
-
-.error-box {
+/*.input-info #error_message {
     
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 350px;
     height: 87px;
@@ -344,6 +326,23 @@ header {
     top: 226px;
     left: 1531px;
 }
+*/
+
+.error-box {
+    display: none;
+    flex-direction: column;
+    width: 350px;
+    height: 87px;
+    padding: 0px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    position: fixed;
+    top: 226px;
+    left: 1531px;
+} 
+
 
 #exclamationmark {
     visibility: visible;
